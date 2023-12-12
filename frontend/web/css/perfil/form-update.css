@@ -1,0 +1,64 @@
+.cuadro-morado {
+    width: 550px;
+    background-color: #701bad;
+    transition-duration: .5s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+
+}
+
+.cont-morado{
+    margin:30px;
+}
+
+.fah{
+    font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color:aliceblue;
+}
+
+
+.cuadro-morado:hover {
+    background-color: #6B3CC5;
+    transition-duration: 0.5s; 
+}
+
+.card {
+    width: 100%;
+}
+
+
+.card-header{
+    border-bottom: 1px dashed #393E46;
+
+}
+
+.card-footer{
+    border-top: 1px dashed #393E46;
+}
+/* ave
+
+.boton-act{
+    background-color: #6B3CC5;
+    border: .5px dashed #4d397c !important;
+}
+
+*/
+
+#preview {
+    width: 20%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    display: block; /* Asegura que la imagen se muestre como bloque y no como línea en línea */
+}
+.hidden-input {
+    display: none;
+}
+.boton-sg{
+    background-color: #6B3CC5;
+    border: .5px dashed #4d397c !important;
+}
+

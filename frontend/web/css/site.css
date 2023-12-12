@@ -1,0 +1,389 @@
+:root {
+    /* Fuente principal del proyecto*/
+    --font-primary: 'Rubik', sans-serif;
+
+    --color-custom-1: #314259;
+    --color-custom-2: #7D7ABF;
+    --color-custom-3: #EFDFCC;
+    --color-custom-4: #fff;
+    --color-custom-5: #000;
+    --light-bg: #EEF1F6;
+    --color-navbar: #2A3650;
+
+    --color-custom-bottom1: #5CB9F2;
+    --color-custom-bottom2: #F25764;
+    --color-custom-bottom3: #BA8E7A;
+    --color-custom-bottom4: #66796B;
+    --color-custom-bottom5: #0da759;
+    --color-custom-bottom6: #d77748;
+    --color-custom-inputs: #66796B;
+    
+    --color-bg-degraded: #ECF1F5;
+    --color-borders: #bec0c3;
+}
+body {
+    background-color: var(--color-bg-degraded) !important;
+}
+main > .container, main > .container-fluid
+{
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container, .footer > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th,
+.grid-view td:last-child {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.navbar form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .navbar form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.navbar form > button.logout:focus,
+.navbar form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar form > button.logout:focus {
+    outline: none;
+}
+
+/* style breadcrumb widget as in previous bootstrap versions */
+.breadcrumb {
+    background-color: var(--bs-gray-200);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+}
+
+.breadcrumb-item > a
+{
+    text-decoration: none;
+}
+.btn-custom1 {
+    background-color: var(--color-custom-bottom1) !important;
+    color: var(--color-custom-4) !important;
+    font-weight: 500 !important;
+}
+.btn-custom2 {
+    background-color: var(--color-custom-2) !important;
+    color: var(--color-custom-4) !important;
+    font-weight: 500 !important;
+}
+.btn-custom3 {
+    background-color: var(--color-custom-bottom2) !important;
+    color: var(--color-custom-4) !important;
+    font-weight: 500 !important;
+}
+.btn-custom4 {
+    background-color: var(--color-custom-bottom5) !important;
+    color: var(--color-custom-4) !important;
+    font-weight: 500 !important;
+}
+.btn-custom5 {
+    background-color: var(--color-custom-bottom6) !important;
+    color: var(--color-custom-4) !important;
+    font-weight: 500 !important;
+}
+.list-nav-custom {
+    display: none !important;
+}
+.input-dashed-border {
+    border: 1.5px dashed var(--color-borders) !important;
+    border-radius: 5px  !important;
+}
+.shadow {
+    box-shadow: 2px 2px 26px 3px rgba(0,0,0,0.25);
+-webkit-box-shadow: 2px 2px 26px 3px rgba(0,0,0,0.25);
+-moz-box-shadow: 2px 2px 26px 3px rgba(0,0,0,0.25);
+}
+.no-border {
+    border: none !important;
+    border-radius: 10px !important;
+}
+.custom-border {
+    border: 1.5px solid var(--color-borders) !important;
+}
+.container-form {
+    border-radius: 10px !important;
+    padding: 20px !important;
+    border: none !important;
+}
+.container-file {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 5px;
+    background-color: rgba(0, 110, 255, 0.041);
+  }
+  
+  .header {
+    flex: 1;
+    width: 100%;
+    border: 2px dashed royalblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .header svg {
+    height: 100px;
+  }
+  
+  .header p {
+    text-align: center;
+    color: black;
+  }
+  
+  .footer {
+    background-color: rgba(0, 110, 255, 0.075);
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    border: none;
+  }
+  
+  .footer svg {
+    height: 130%;
+    fill: royalblue;
+    background-color: rgba(70, 66, 66, 0.103);
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
+  }
+  
+  .footer p {
+    flex: 1;
+    text-align: center;
+  }
+  
+  #file {
+    display: none;
+  }
+.container .container-signup,.container-login{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Aprovecha el 100% del alto de la ventana */
+    margin: 0;
+    padding: 0%;
+}
+.dashed-border-bottom {
+    border-bottom: 2px dashed var(--color-borders) !important;
+}
+.arrendamiento-form {
+    background-color: var(--color-custom-4) !important;
+    padding: 30px !important;
+    border-radius: 10px !important;
+}
+.navbar-custom {
+    background-color: var(--color-navbar) !important;
+}
+.nav-link{
+    color: var(--color-custom-4) !important;
+    width: 700 !important;
+}
+.btn-custom-hover-nav {
+    background-color: #6837f2;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold !important;
+    letter-spacing: 1.5px !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-hover-nav:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(208, 154, 255, 0.1);
+    border-radius: 10%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 1.2s ease;
+}
+
+.btn-custom-hover-nav:hover:after {
+    width: 210px;
+    height: 200px;
+    opacity: 1;
+}
+
+.btn-custom-hover-nav:focus {
+    outline: none;
+}
+
+.btn-custom-hover-nav:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+.btn-custom-hover-nav:hover {
+    transform: scale(1.1);
+    color: #ffffff !important;
+}
+  
+.input, .textarea, .select{
+    border: 1.6px dashed var(--color-borders) !important;
+    border-radius: 5px  !important;
+}
+.title-form-sing {
+    color: var(--color-custom-2) !important;
+    font-weight: bold !important;
+}
+.perfil-form {
+    background-color: var(--color-custom-4) !important;
+    border-radius: 10px !important;
+}
+.logo-image {
+    width: 50px !important;
+    height: auto !important;
+}
+
+.title-views {
+    font-weight: bold !important;
+}
+
+/*====================Estilos de la vista view de los arrendamiento================*/
+.row-view {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.detalle_propiedad {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+/*====================Estilos del carusel de imagenes==========================*/
+.project-view__carousel {
+    margin-bottom: 32px;
+}
+
+.project-view__carousel-image {
+    object-fit: cover;
+    width: 100%;
+    max-height: 700px;
+}
+.image .propiedad-view__carousel {
+    max-width: 100%;
+    height: auto; /* para mantener la proporción de la imagen */
+
+}
+
+/*=======================Estilos del boton de busqueda ========================*/
+.search {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    width: 100% !important;
+}
+
+.search__input {
+    flex: 1; /* El campo de entrada ocupa todo el espacio disponible */
+    border-radius: 10px; /* Ajusta el radio de la esquina izquierda */
+    border:none !important;
+    
+}
+
+.search__button {
+    border-radius: 0 4px 4px 0; /* Ajusta el radio de la esquina derecha */
+}
+.resposibe-card {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media (min-width: 768px ) {
+    .resposibe-card {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}

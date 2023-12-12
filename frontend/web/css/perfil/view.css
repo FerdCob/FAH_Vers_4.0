@@ -1,0 +1,49 @@
+.perfil-view {
+    font-family: 'Poppins', sans-serif;
+    /*background-color: #E8E8E8;*/
+}
+
+:root {
+    --color-morado: rgb(44, 62, 100);
+    --color-fondo: rgb(255, 255, 255); /* Define una variable para el color de fondo */
+    --color-fondo_gris: rgba(243, 244, 246, 1);
+    --color-titulo:#7A70BA;
+    --color-letras_gris:#cac5c6;
+    --color-letras_gris2:#726669;
+}
+
+.perfil-view .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-view img.img-circle {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.perfil-view .row {
+    display: flex;
+    justify-content: space-between;
+}
+/* web/css/perfil/view.css */
+
+/* Estilo por defecto para los botones */
+.btn-outline-dashed {
+    border-style: dashed;
+}
+
+/* Efecto hover para los botones */
+.btn-outline-dashed:hover {
+    border-style: solid;
+}
+
+
+.tile{
+
+    font-size: 2.5rem;
+    font-weight: bold;
+}
